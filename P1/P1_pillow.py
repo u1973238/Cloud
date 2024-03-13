@@ -139,3 +139,4 @@ with open('image.jpg', 'wb') as handler:
 
 exemple = regionGrow('image.jpg', sys.argv[2])
 exemple.ApplyRegionGrow()
+exemple.saveImage('output_image.jpg')
