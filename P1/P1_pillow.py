@@ -103,6 +103,8 @@ class regionGrow():
     def display(self):
         img = Image.fromarray(self.SEGS, 'RGB')
         img.show()
+        Image.save('output_image.jpg')
+        
 
     def BFS(self, x0, y0):
         regionNum = self.passedBy[x0, y0]
@@ -139,4 +141,4 @@ with open('image.jpg', 'wb') as handler:
 
 exemple = regionGrow('image.jpg', sys.argv[2])
 exemple.ApplyRegionGrow()
-exemple.saveImage('output_image.jpg')
+
